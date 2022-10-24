@@ -1,0 +1,316 @@
+/* CSS global variables */
+:root {
+    --color-header-dark-gray: rgb(52, 54, 56);
+    --color-header-light-blue: lightblue;
+    --color-body-dark-blue: rgb(78, 118, 150);
+    --color-body-light-blue: rgb(240, 248, 252);
+    --font-family: Arial, Corbel, 'Lucida Sans Unicode', 'Lucida Sans', 'Comic Sans MS', sans-serif;
+}
+
+/* default global starter values */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    font-family: var(--font-family);
+    padding: 20px;
+    background-color: var(--color-header-dark-gray);
+    color: var(--color-header-light-blue);
+}
+
+/* the main portion of the main/top person name header text */
+.portfolio_name {;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 50px;
+    padding-right: 20px;
+    color: var(--color-header-dark-gray);
+    background-color: var(--color-header-light-blue);
+}
+
+/* the section that is for the top menu of section links */
+.header_div {
+    padding-top: 10px;
+    padding-right: 50px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* for the list of links of the top menu of sections */
+.header_div ul {
+    list-style-type: none;
+}
+
+/* for the list items of links of the top menu of sections */
+.header_div ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* the overall body section */
+body {
+    font-family: var(--font-family);
+    color: var(--color-body-dark-blue);
+    background-color: var(--color-body-light-blue);
+}
+
+/* the main body section */
+main {
+    /* no necessary custom style for this section at the moment */
+}
+
+/* standard heading 1 */
+h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+/* standard heading 2 */
+h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+div > h2 {
+    margin-bottom: 0px;
+}
+
+/* standard heading 3 */
+h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* to allow for links in the webpage to be underlined and to not have a different color when the links are clicked */
+a {
+    color: var(--color-header-light-blue);
+    text-decoration: underline;
+}
+
+a::selection {
+    color: var(--color-header-light-blue);
+    text-decoration: underline;
+}
+
+.contact_detail_div_flex_list a {
+    color: var(--color-body-dark-blue);
+    text-decoration: none;
+}
+
+.contact_detail_div_flex_list a::selection {
+    color: var(--color-body-dark-blue);
+    text-decoration: none;
+}
+
+/* regular section paragraph text */
+p {
+    font-size: 15px;
+}
+
+.main_background {
+    height: 260px;
+    min-width: 500px;
+    margin-bottom: 0px;
+    background-image: url("../images/main_background_art.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main_background_div {
+    position: absolute;
+    top: 250px;
+    right: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-header-dark-gray);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--color-header-light-blue);
+}
+
+.content_box_section { 
+    display: flex; 
+    flex-wrap: wrap;
+    width: 100%;
+    border: 3px solid var(--color-header-light-blue);
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 50px;
+}
+
+.content_box_section > .content_box_heading {
+    width: 15%;
+    min-width: 150px;
+    min-height: 50px;
+    padding: 5px;
+    text-align: right;
+    border: 3px solid var(--color-header-light-blue);
+    border-right: 7px solid var(--color-body-dark-blue);
+    background-color: var(--color-body-light-blue);
+}
+
+.content_box_section > .content_box_detail {
+    width: calc(85% - 20px);
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 50px;
+    border: 3px solid var(--color-header-light-blue);
+    background-color: var(--color-body-light-blue);
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.content_box_section > #About_Me_Detail {
+    align-items: flex-start;
+}   
+
+.content_box_section > .content_box_detail > p {
+    margin-bottom: 0px;
+  }
+
+.work_detail_div_flex_list_most_recent, 
+.work_detail_div_flex_list, 
+.contact_detail_div_flex_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work_detail_div_flex_list_most_recent, 
+.work_detail_div_flex_list, 
+.work_detail_div_flex_list_full_width {
+    background-color: white;
+    width: 100%;
+}
+
+.work_detail_div_flex_list {
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.work_detail_div_flex_list_div_most_recent {
+    width: 100%;
+    max-height: 350px;
+    border: 5px solid var(--color-header-light-blue);
+    padding: 0px;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: relative;
+}
+
+.work_detail_div_flex_list_div {
+    width: calc(50% - 10px);
+    max-height: 250px;
+    border: 5px solid var(--color-header-light-blue);
+    padding: 0px;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: relative;
+}
+
+.work_detail_div_label_div {
+    position: absolute;
+    bottom: 30px;
+    width: fit-content;
+    max-width: 250px;
+    height: 100px;
+    max-height: 100px;
+    padding: 5px;
+    background-color: var(--color-header-light-blue);
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.work_detail_div_label_div > p {
+    font-size: 15px;
+    text-align: middle;
+}
+
+.work_detail_div_flex_list_div_most_recent img {
+    width: 100%;
+    height: auto;
+}
+
+.work_detail_div_flex_list_div img {
+    width: 100%;
+    height: auto;
+}
+
+.work_detail_div_flex_list_div_most_recent img:hover, 
+.work_detail_div_flex_list_div img:hover {
+    filter: saturate(2) contrast(50%) brightness(125%);
+    background-color: rgb(250, 250, 74, .75);
+    border: 1px solid rgb(250, 250, 74, .05);
+}
+
+#contact_detail_section {
+    margin-bottom: 10px;
+}
+
+.contact_detail_div_flex_list > div {
+    width: fit-content;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-right: 50px;
+    border-bottom: 3px solid var(--color-body-dark-blue);
+}
+
+  footer {
+    font-family: var(--font-family);
+    color: var(--color-header-dark-gray);
+    padding: 30px;
+    text-align: center;
+}
+
+.footer_highlight_text {
+    color: black;
+    font-size: 20px;
+}
+
+.footer_highlight_text span {
+    font-family: "Wingdings";
+}
+
+/* a Media Query for responsiveness: Content boxes are arranged into 1 primary vertical-layout picture-above-text column for device screen widths of at least 500px. */
+@media screen and (min-width: 500px) {
+
+}
+
+/* a Media Query for responsiveness: Content boxes are arranged into 2 horizontal-layout floating-picture-text columns for device screen widths of at least 750px; initially 2-column but then in a primary 1-column layout for smaller sizing if necessary/applicable. */
+@media screen and (min-width: 750px) {
+
+}
+
+/* a Media Query for responsiveness: Content boxes are arranged into 2 horizontal-layout floating-picture-text columns for device screen widths of at least 1000px. */
+@media screen and (min-width: 1000px) {
+
+}
+
+/* a Media Query for responsiveness: Content boxes are arranged into 2 horizontal-layout floating-picture-text columns for device screen widths of at least 1250px. */
+@media screen and (min-width: 1250px) {
+
+}
