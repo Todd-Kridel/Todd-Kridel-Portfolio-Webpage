@@ -22,7 +22,7 @@ header {
 }
 
 /* the main portion of the main/top person name header text */
-.portfolio_name {;
+.portfolio_name {
     display: inline-block;
     font-size: 40px;
     font-weight: bold;
@@ -58,11 +58,6 @@ body {
     font-family: var(--font-family);
     color: var(--color-body-dark-blue);
     background-color: var(--color-body-light-blue);
-}
-
-/* the main body section */
-main {
-    /* no necessary custom style for this section at the moment */
 }
 
 /* standard heading 1 */
@@ -150,7 +145,7 @@ p {
 }
 
 .content_box_section > .content_box_heading {
-    width: 15%;
+    /* width: 15%; */
     min-width: 150px;
     min-height: 50px;
     padding: 5px;
@@ -160,18 +155,26 @@ p {
     background-color: var(--color-body-light-blue);
 }
 
+/*
+#work_detail_div_blank_row_divider {
+    min-height: 50px; 
+    border-right: 7px solid var(--color-body-dark-blue);
+}
+*/
+
 .content_box_section > .content_box_detail {
-    width: calc(85% - 20px);
+    /* width: calc(85% - 20px); */
     padding-top: 5px;
     padding-bottom: 0px;
     padding-left: 20px;
-    padding-right: 20px;
+    /* padding-right: 20px; */
     min-height: 50px;
     border: 3px solid var(--color-header-light-blue);
     background-color: var(--color-body-light-blue);
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    /* margin-left: 0px; */
+    /* margin-right: 20px; */
 }
 
 .content_box_section > #About_Me_Detail {
@@ -215,7 +218,7 @@ p {
 }
 
 .work_detail_div_flex_list_div {
-    width: calc(50% - 10px);
+    /* width: calc(50% - 10px); */
     max-height: 250px;
     border: 5px solid var(--color-header-light-blue);
     padding: 0px;
@@ -231,7 +234,7 @@ p {
     position: absolute;
     bottom: 30px;
     width: fit-content;
-    max-width: 250px;
+    /* max-width: 250px; */
     height: 100px;
     max-height: 100px;
     padding: 5px;
@@ -297,20 +300,92 @@ p {
 
 /* a Media Query for responsiveness: Content boxes are arranged into 1 primary vertical-layout picture-above-text column for device screen widths of at least 500px. */
 @media screen and (min-width: 500px) {
-
+    .content_box_section > .content_box_heading {
+        width: 100%;
+    }
+    .content_box_section > .content_box_detail {
+        padding-right: 0px;
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+    #work_detail_div_blank_row_divider {
+        min-height: 1px;
+        border-right: none;
+    }
+    .work_detail_div_flex_list_div {
+        width: 100%;
+    }
+    .work_detail_div_label_div {
+    max-width: 350px;
+    }
 }
 
 /* a Media Query for responsiveness: Content boxes are arranged into 2 horizontal-layout floating-picture-text columns for device screen widths of at least 750px; initially 2-column but then in a primary 1-column layout for smaller sizing if necessary/applicable. */
 @media screen and (min-width: 750px) {
-
+    .content_box_section > .content_box_heading {
+        width: 15%;
+    }
+    .content_box_section > .content_box_detail {
+        padding-right: 20px;
+        width: calc(85% - 20px);
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+    #work_detail_div_blank_row_divider {
+        min-height: 50px;
+        border-right: 7px solid var(--color-body-dark-blue);
+    }
+    .work_detail_div_flex_list_div {
+        width: calc(50% - 10px);
+    }
+    .work_detail_div_label_div {
+        max-width: 250px;
+    }
 }
 
 /* a Media Query for responsiveness: Content boxes are arranged into 2 horizontal-layout floating-picture-text columns for device screen widths of at least 1000px. */
 @media screen and (min-width: 1000px) {
-
+    .content_box_section > .content_box_heading {
+        width: 15%;
+    }
+    .content_box_section > .content_box_detail {
+        padding-right: 20px;
+        width: calc(85% - 20px);
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+    #work_detail_div_blank_row_divider {
+        min-height: 50px;
+        border-right: 7px solid var(--color-body-dark-blue);
+    }
+    .work_detail_div_flex_list_div {
+        width: calc(50% - 10px);
+    }
+    .work_detail_div_label_div {
+        max-width: 250px;
+    }
 }
 
 /* a Media Query for responsiveness: Content boxes are arranged into 2 horizontal-layout floating-picture-text columns for device screen widths of at least 1250px. */
 @media screen and (min-width: 1250px) {
-
+    .content_box_section > .content_box_heading {
+        width: 15%;
+    }
+    .content_box_section > .content_box_detail {
+        padding-right: 20px;
+        width: calc(85% - 20px);
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+    #work_detail_div_blank_row_divider {
+        min-height: 50px;
+        border-right: 7px solid var(--color-body-dark-blue);
+    }
+    .work_detail_div_flex_list_div {
+        width: calc(50% - 10px);
+    }
+    .work_detail_div_label_div {
+        max-width: 250px;
+    }
 }
