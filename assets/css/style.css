@@ -14,6 +14,7 @@
     margin: 0;
 }
 
+/* basic foundation for the introductory functional section */
 header {
     font-family: var(--font-family);
     padding: 20px;
@@ -72,6 +73,7 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* for a special flex display box heading placement */
 div > h2 {
     margin-bottom: 0px;
 }
@@ -83,22 +85,25 @@ h3 {
     margin-bottom: 10px;
 }
 
-/* to allow for links in the webpage to be underlined and to not have a different color when the links are clicked */
+/* to allow for upper/header menu links in the webpage to be anchor-underlined and to not have a different color when the links are clicked */
 a {
     color: var(--color-header-light-blue);
     text-decoration: underline;
 }
 
+/* to allow for upper/header menu links in the webpage to be anchor-underlined and to not have a different color when the links are clicked */
 a::selection {
     color: var(--color-header-light-blue);
     text-decoration: underline;
 }
 
+/* to allow for lower/footer links in the webpage to be not anchor-underlined and to not have a different color when the links are clicked; and instead be box-border-underlined */
 .contact_detail_div_flex_list a {
     color: var(--color-body-dark-blue);
     text-decoration: none;
 }
 
+/* to allow for lower/footer links in the webpage to be not anchor-underlined and to not have a different color when the links are clicked; and instead be box-border-underlined */
 .contact_detail_div_flex_list a::selection {
     color: var(--color-body-dark-blue);
     text-decoration: none;
@@ -109,6 +114,7 @@ p {
     font-size: 15px;
 }
 
+/* for the main upper background/banner image area and focal point */
 .main_background {
     height: 260px;
     min-width: 500px;
@@ -119,6 +125,7 @@ p {
     background-repeat: no-repeat;
 }
 
+/* for the specific finite details of the main upper background/banner image area and focal point */
 .main_background_div {
     position: absolute;
     top: 250px;
@@ -133,12 +140,13 @@ p {
     background-color: var(--color-header-light-blue);
 }
 
+/* for the main foundation of the presented information rows */
 .content_box_section { 
     display: flex; 
     flex-wrap: wrap;
     width: 100%;
     border: none;
-    /* border: 3px solid var(--color-header-light-blue); */
+    /* border: 3px solid var(--color-header-light-blue); dynamically processed by a media query */
     padding-top: 20px;
     padding-bottom: 0px;
     padding-left: 0px;
@@ -146,18 +154,18 @@ p {
 }
 
 .content_box_section > .content_box_heading {
-    /* width: 15%; */
+    /* width: 15%; dynamically processed by a media query */
     min-width: 150px;
     min-height: 50px;
     padding: 5px;
     text-align: right;
     border: none;
-    /* border: 3px solid var(--color-header-light-blue); */
+    /* border: 3px solid var(--color-header-light-blue); used for testing */
     border-right: 7px solid var(--color-body-dark-blue);
     background-color: var(--color-body-light-blue);
 }
 
-/*
+/* dynamically processed by a media query
 #work_detail_div_blank_row_divider {
     min-height: 50px; 
     border-right: 7px solid var(--color-body-dark-blue);
@@ -165,19 +173,19 @@ p {
 */
 
 .content_box_section > .content_box_detail {
-    /* width: calc(85% - 20px); */
+    /* width: calc(85% - 20px); dynamically processed by a media query */
     padding-top: 5px;
     padding-bottom: 0px;
     padding-left: 20px;
-    /* padding-right: 20px; */
+    /* padding-right: 20px; dynamically processed by a media query */
     min-height: 50px;
     border: none;
-    /* border: 3px solid var(--color-header-light-blue); */
+    /* border: 3px solid var(--color-header-light-blue); dynamically processed by a media query */
     background-color: var(--color-body-light-blue);
     display: flex;
     align-items: center;
-    /* margin-left: 0px; */
-    /* margin-right: 20px; */
+    /* margin-left: 0px; dynamically processed by a media query */
+    /* margin-right: 20px; dynamically processed by a media query */
 }
 
 .content_box_section > #About_Me_Detail {
@@ -188,6 +196,7 @@ p {
     margin-bottom: 0px;
   }
 
+/* for flex layout foundation */
 .work_detail_div_flex_list_most_recent, 
 .work_detail_div_flex_list, 
 .contact_detail_div_flex_list {
@@ -199,7 +208,7 @@ p {
 .work_detail_div_flex_list, 
 .work_detail_div_flex_list_full_width {
     background-color: var(--color-body-light-blue);
-    /* background-color: white; */
+    /* background-color: white; used for testing */
     width: 100%;
 }
 
@@ -212,7 +221,7 @@ p {
     width: 100%;
     max-height: 350px;
     border: none;
-    /* border: 5px solid var(--color-header-light-blue); */
+    /* border: 5px solid var(--color-header-light-blue); used for testing */
     padding: 0px;
     overflow: hidden;
     margin-top: 0px;
@@ -223,10 +232,10 @@ p {
 }
 
 .work_detail_div_flex_list_div {
-    /* width: calc(50% - 10px); */
+    /* width: calc(50% - 10px); dynamically processed by a media query */
     max-height: 250px;
     border: none;
-    /* border: 5px solid var(--color-header-light-blue); */
+    /* border: 5px solid var(--color-header-light-blue); used for testing */
     padding: 0px;
     overflow: hidden;
     margin-top: 15px;
@@ -240,7 +249,7 @@ p {
     position: absolute;
     bottom: 30px;
     width: fit-content;
-    /* max-width: 250px; */
+    /* max-width: 250px; dynamically processed by a media query */
     height: 100px;
     max-height: 100px;
     padding: 5px;
@@ -268,6 +277,7 @@ p {
     height: auto;
 }
 
+/* for a special visual effect for image pointing */
 .work_detail_div_flex_list_div_most_recent img:hover, 
 .work_detail_div_flex_list_div img:hover {
     filter: saturate(2) contrast(50%) brightness(125%);
@@ -275,10 +285,12 @@ p {
     border: 1px solid rgb(250, 250, 74, .05);
 }
 
+/* for special bottom-of-page vertical spacing for finishing */
 #contact_detail_section {
     margin-bottom: 10px;
 }
 
+/* for the contact menu layout */
 .contact_detail_div_flex_list > div {
     width: fit-content;
     margin-top: 0px;
@@ -288,7 +300,8 @@ p {
     border-bottom: 3px solid var(--color-body-dark-blue);
 }
 
-  footer {
+/* for future usage */
+footer {
     font-family: var(--font-family);
     color: var(--color-header-dark-gray);
     padding: 30px;
