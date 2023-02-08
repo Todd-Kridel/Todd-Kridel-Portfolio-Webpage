@@ -80,9 +80,10 @@ div > h2 {
 
 /* standard heading 3 */
 h3 {
-    font-size: 20px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    font-size: 17px;
+    text-decoration: underline;
+    margin-top: 3px;
+    margin-bottom: 5px;
 }
 
 /* to allow for upper/header menu links in the webpage to be anchor-underlined and to not have a different color when the links are clicked */
@@ -165,16 +166,17 @@ p {
     background-color: var(--color-body-light-blue);
 }
 
-/* dynamically processed by a media query
-#work_detail_div_blank_row_divider {
-    min-height: 50px; 
-    border-right: 7px solid var(--color-body-dark-blue);
+
+/* additionally dynamically processed by a media query */
+#work_detail_div_blank_row_divider, .content_box_heading {
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
-*/
+
 
 .content_box_section > .content_box_detail {
     /* width: calc(85% - 20px); dynamically processed by a media query */
-    padding-top: 5px;
+    padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 20px;
     /* padding-right: 20px; dynamically processed by a media query */
@@ -209,6 +211,7 @@ p {
 .work_detail_div_flex_list_full_width {
     background-color: var(--color-body-light-blue);
     /* background-color: white; used for testing */
+    /* height: ; */
     width: 100%;
 }
 
@@ -219,7 +222,7 @@ p {
 
 .work_detail_div_flex_list_div_most_recent {
     width: 100%;
-    max-height: 350px;
+    height: 350px;
     border: none;
     border: 5px solid var(--color-header-light-blue);
     padding: 0px;
@@ -233,7 +236,7 @@ p {
 
 .work_detail_div_flex_list_div {
     /* width: calc(50% - 10px); dynamically processed by a media query */
-    max-height: 250px;
+    height: 250px;
     border: none;
     border: 5px solid var(--color-header-light-blue);
     padding: 0px;
@@ -269,12 +272,14 @@ p {
 
 .work_detail_div_flex_list_div_most_recent img {
     width: 100%;
-    height: auto;
+    height: 315px;
+    max-height: 315px;
 }
 
 .work_detail_div_flex_list_div img {
     width: 100%;
-    height: auto;
+    height: 215px;
+    max-height: 215px;
 }
 
 /* for a special visual effect for image pointing */
@@ -282,7 +287,7 @@ p {
 .work_detail_div_flex_list_div img:hover {
     filter: saturate(2) contrast(50%) brightness(125%);
     background-color: rgb(250, 250, 74, .75);
-    border: 1px solid rgb(250, 250, 74, .05);
+    border: 3px solid rgb(250, 250, 74, .75);
 }
 
 /* for special bottom-of-page vertical spacing for finishing */
