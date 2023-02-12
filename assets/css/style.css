@@ -211,8 +211,9 @@ p {
 .work_detail_div_flex_list_full_width {
     background-color: var(--color-body-light-blue);
     /* background-color: white; used for testing */
-    /* height: ; */
     width: 100%;
+    height: auto;
+    /* height: calc(width * .7); */
 }
 
 .work_detail_div_flex_list {
@@ -272,14 +273,16 @@ p {
 
 .work_detail_div_flex_list_div_most_recent img {
     width: 100%;
-    height: 315px;
-    max-height: 315px;
+    height: auto;
+    /* height: 315px; */  /* handled per media queries */
+    /* max-height: 315px; */
 }
 
 .work_detail_div_flex_list_div img {
     width: 100%;
-    height: 215px;
-    max-height: 215px;
+    height: auto;
+    /* height: 215px; */  /* handled per media queries */
+    /* max-height: 215px; */
 }
 
 /* for a special visual effect for image pointing */
@@ -343,6 +346,14 @@ footer {
     .work_detail_div_label_div {
     max-width: 350px;
     }
+    .work_detail_div_flex_list_div_most_recent img {
+        min-height: 315px;
+        max-height: 315px;
+    }
+    .work_detail_div_flex_list_div img {
+        min-height: 215px;
+        max-height: 215px;
+    }
 }
 
 /* a Media Query for responsiveness: Content boxes are arranged into 2 horizontal-layout floating-picture-text columns for device screen widths of at least 750px; initially 2-column but then in a primary 1-column layout for smaller sizing if necessary/applicable. */
@@ -365,6 +376,14 @@ footer {
     }
     .work_detail_div_label_div {
         max-width: 250px;
+    }
+    .work_detail_div_flex_list_div_most_recent img {
+        min-height: 365px;
+        max-height: 365px;
+    }
+    .work_detail_div_flex_list_div img {
+        min-height: 265px;
+        max-height: 265px;
     }
 }
 
@@ -389,6 +408,14 @@ footer {
     .work_detail_div_label_div {
         max-width: 250px;
     }
+    .work_detail_div_flex_list_div_most_recent img {
+        min-height: 415px;
+        max-height: 415px;
+    }
+    .work_detail_div_flex_list_div img {
+        min-height: 315px;
+        max-height: 315px;
+    }
 }
 
 /* a Media Query for responsiveness: Content boxes are arranged into 2 horizontal-layout floating-picture-text columns for device screen widths of at least 1250px. */
@@ -411,5 +438,44 @@ footer {
     }
     .work_detail_div_label_div {
         max-width: 250px;
+    }
+    .work_detail_div_flex_list_div_most_recent img {
+        min-height: 465px;
+        max-height: 465px;
+    } 
+    .work_detail_div_flex_list_div img {
+        min-height: 365px;
+        max-height: 365px;
+    }
+}
+
+/* a Media Query for responsiveness: Content boxes are arranged into 2 horizontal-layout floating-picture-text columns for device screen widths of at least 1250px. */
+@media screen and (min-width: 1500px) {
+    .content_box_section > .content_box_heading {
+        width: 15%;
+    }
+    .content_box_section > .content_box_detail {
+        padding-right: 20px;
+        width: calc(85% - 20px);
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+    #work_detail_div_blank_row_divider {
+        min-height: 50px;
+        border-right: 7px solid var(--color-body-dark-blue);
+    }
+    .work_detail_div_flex_list_div {
+        width: calc(50% - 10px);
+    }
+    .work_detail_div_label_div {
+        max-width: 250px;
+    }
+    .work_detail_div_flex_list_div_most_recent img {
+        min-height: 515px;
+        max-height: 515px;
+    } 
+    .work_detail_div_flex_list_div img {
+        min-height: 415px;
+        max-height: 415px;
     }
 }
