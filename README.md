@@ -60,7 +60,7 @@ To use this sample in-progress personal professional portfolio webpage system th
 
 The following picture shows the appearance of the current appearance of the in-progress webpage:
 
-![an example view of the current appearance of the in-progress webpage](assets/images/Current_Website_In-Progress_Appearance_10242022.jpg)
+![an example view of the current appearance of the in-progress webpage](assets/images/Personal_Portfolio_appearance.jpg)
 
 The following URL is for the GitHub Pages published public view of Todd Kridel's Personal Professional Portfolio assignment webpage: "https://todd-kridel.github.io/Todd-Kridel-Portfolio-Webpage/".
 
