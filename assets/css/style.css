@@ -25,10 +25,11 @@ header {
 /* the main portion of the main/top person name header text */
 .portfolio_name {
     display: inline-block;
+    text-align: center;
     font-size: 40px;
     font-weight: bold;
-    padding-left: 50px;
-    padding-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
     color: var(--color-header-dark-gray);
     background-color: var(--color-header-light-blue);
 }
