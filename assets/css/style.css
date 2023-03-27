@@ -4,7 +4,7 @@
     --color-header-light-blue: lightblue;
     --color-body-dark-blue: rgb(78, 118, 150);
     --color-body-light-blue: rgb(240, 248, 252);
-    --font-family: Arial, Corbel, 'Lucida Sans Unicode', 'Lucida Sans', 'Comic Sans MS', sans-serif;
+    --font-family: 'Comic Sans MS', Arial, Helvetica, Verdana, sans-serif;
 }
 
 /* default global starter values */
