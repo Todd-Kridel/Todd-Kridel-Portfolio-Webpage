@@ -256,7 +256,7 @@ p {
 
 .work_detail_div_label_div {
     position: absolute;
-    bottom: 30px;
+    bottom: 45px;
     width: fit-content;
     /* max-width: 250px; dynamically processed by a media query */
     height: 100px;
